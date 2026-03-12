@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://3actod25576n"]
+
+[ext_resource type="PackedScene" uid="uid://josxs5dtr4rk" path="res://character_editor.tscn" id="1_fyqef"]
+
+[node name="UI" type="Control" unique_id=313580356]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="CharacterEditor" parent="." unique_id=1916253684 instance=ExtResource("1_fyqef")]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2022969253]
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 94.0
+grow_vertical = 2
+
+[node name="White Shirt" type="Button" parent="VBoxContainer" unique_id=1795796460]
+layout_mode = 2
+text = "White shirt"
+
+[node name="Black Shirt" type="Button" parent="VBoxContainer" unique_id=717512527]
+layout_mode = 2
+text = "Black shirt"

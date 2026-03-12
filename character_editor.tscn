@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://josxs5dtr4rk"]
+
+[ext_resource type="Texture2D" uid="uid://dsjehbdw60g0e" path="res://Maddock.png" id="1_3ypwv"]
+
+[node name="CharacterEditor" type="Node2D" unique_id=1916253684]
+
+[node name="Maddock" type="Sprite2D" parent="." unique_id=1831231804]
+position = Vector2(320, 240)
+texture = ExtResource("1_3ypwv")
