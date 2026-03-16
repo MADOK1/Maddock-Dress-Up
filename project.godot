@@ -10,8 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Eledes Elasobi"
-run/main_scene="uid://josxs5dtr4rk"
+config/name="Maddock-Dress-Up"
+run/main_scene="uid://3actod25576n"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 

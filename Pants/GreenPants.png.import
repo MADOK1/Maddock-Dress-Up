@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dn337606btasp"
-path="res://.godot/imported/MaddockFace.png-92733083fe1340f47d5368e30073a747.ctex"
+uid="uid://buktsacpt6ny1"
+path="res://.godot/imported/GreenPants.png-952e989cfa92d1c0009a8017109ab29d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Hands/MaddockFace.png"
-dest_files=["res://.godot/imported/MaddockFace.png-92733083fe1340f47d5368e30073a747.ctex"]
+source_file="res://Pants/GreenPants.png"
+dest_files=["res://.godot/imported/GreenPants.png-952e989cfa92d1c0009a8017109ab29d.ctex"]
 
 [params]
 

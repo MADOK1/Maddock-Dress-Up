@@ -1,9 +1,37 @@
 [gd_scene format=3 uid="uid://josxs5dtr4rk"]
 
 [ext_resource type="Texture2D" uid="uid://dsjehbdw60g0e" path="res://Maddock.png" id="1_3ypwv"]
+[ext_resource type="Texture2D" uid="uid://4h8tfxlp5n8r" path="res://Shirts/WhiteShirt.png" id="2_1gofx"]
+[ext_resource type="Texture2D" uid="uid://dr0fdrt0jwxx1" path="res://Heads/Sadh.png" id="3_1gofx"]
+[ext_resource type="Texture2D" uid="uid://b58fax7015otm" path="res://Hands/MaddockLeftHand.png" id="4_ocgc6"]
+[ext_resource type="Texture2D" uid="uid://brscpglwxrqbt" path="res://Hands/MaddockRightHand.png" id="5_c16l2"]
+[ext_resource type="Texture2D" uid="uid://dpwojoe85whwy" path="res://Pants/BluePants.png" id="6_1gofx"]
 
 [node name="CharacterEditor" type="Node2D" unique_id=1916253684]
 
 [node name="Maddock" type="Sprite2D" parent="." unique_id=1831231804]
 position = Vector2(320, 240)
 texture = ExtResource("1_3ypwv")
+
+[node name="Shirt" type="Sprite2D" parent="." unique_id=301367750]
+position = Vector2(320, 241)
+texture = ExtResource("2_1gofx")
+
+[node name="Head" type="Sprite2D" parent="." unique_id=1301745732]
+position = Vector2(331, 51)
+scale = Vector2(1.38, 1.38)
+texture = ExtResource("3_1gofx")
+
+[node name="LeftHand" type="Sprite2D" parent="." unique_id=824083379]
+position = Vector2(260.00003, 176)
+scale = Vector2(1.7692307, 1.7692307)
+texture = ExtResource("4_ocgc6")
+
+[node name="RightHand" type="Sprite2D" parent="." unique_id=1800192652]
+position = Vector2(389, 154.99998)
+scale = Vector2(1.9, 1.9000001)
+texture = ExtResource("5_c16l2")
+
+[node name="Pants" type="Sprite2D" parent="." unique_id=756438037]
+position = Vector2(318, 368)
+texture = ExtResource("6_1gofx")

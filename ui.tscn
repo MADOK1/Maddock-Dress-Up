@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://3actod25576n"]
 
 [ext_resource type="PackedScene" uid="uid://josxs5dtr4rk" path="res://character_editor.tscn" id="1_fyqef"]
+[ext_resource type="Script" uid="uid://bwoxtjyvg6klt" path="res://ui.gd" id="1_m6e0p"]
 
 [node name="UI" type="Control" unique_id=313580356]
 layout_mode = 3
@@ -11,21 +12,73 @@ grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+script = ExtResource("1_m6e0p")
 metadata/_edit_use_anchors_ = true
 
 [node name="CharacterEditor" parent="." unique_id=1916253684 instance=ExtResource("1_fyqef")]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2022969253]
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=137004578]
 layout_mode = 1
-anchors_preset = 9
-anchor_bottom = 1.0
-offset_right = 94.0
-grow_vertical = 2
+offset_right = 201.0
+offset_bottom = 136.0
 
-[node name="White Shirt" type="Button" parent="VBoxContainer" unique_id=1795796460]
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer" unique_id=2022969253]
+layout_mode = 2
+
+[node name="White Shirt" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=1795796460]
 layout_mode = 2
 text = "White shirt"
 
-[node name="Black Shirt" type="Button" parent="VBoxContainer" unique_id=717512527]
+[node name="Black Shirt" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=717512527]
 layout_mode = 2
 text = "Black shirt"
+
+[node name="S shirt" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=168347404]
+layout_mode = 2
+text = "S Shirt"
+
+[node name="Evil Shirt" type="Button" parent="HBoxContainer/VBoxContainer" unique_id=662696540]
+layout_mode = 2
+text = "Evil Shirt"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer" unique_id=1588415900]
+layout_mode = 2
+
+[node name="Blue Pants" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=1279053381]
+layout_mode = 2
+text = "Blue Pants"
+
+[node name="Green Pants" type="Button" parent="HBoxContainer/VBoxContainer2" unique_id=263135165]
+layout_mode = 2
+text = "Green Pants
+"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="." unique_id=160475014]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.70625
+anchor_right = 1.0
+anchor_bottom = 0.39583334
+grow_horizontal = 0
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer2" unique_id=255067315]
+layout_mode = 2
+size_flags_horizontal = 10
+
+[node name="Smiling" type="Button" parent="HBoxContainer2/VBoxContainer" unique_id=792303172]
+layout_mode = 2
+text = "Smiling"
+
+[node name="Normal" type="Button" parent="HBoxContainer2/VBoxContainer" unique_id=181928190]
+layout_mode = 2
+text = "Normal"
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/White Shirt" to="." method="_on_white_shirt_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Black Shirt" to="." method="_on_black_shirt_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/S shirt" to="." method="_on_s_shirt_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/Evil Shirt" to="." method="_on_evil_shirt_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/Blue Pants" to="." method="_on_blue_pants_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/Green Pants" to="." method="_on_green_pants_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer/Smiling" to="." method="_on_smiling_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer/Normal" to="." method="_on_normal_pressed"]
