@@ -38,3 +38,7 @@ func _on_smiling_pressed() -> void:
 
 func _on_normal_pressed() -> void:
 	headsprite.texture = load("res://Heads/Sadh.png")
+
+
+func _on_angry_pressed() -> void:
+	headsprite.texture = load("res://Heads/Angry.png")

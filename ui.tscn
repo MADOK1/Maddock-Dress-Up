@@ -74,6 +74,10 @@ text = "Smiling"
 layout_mode = 2
 text = "Normal"
 
+[node name="Angry" type="Button" parent="HBoxContainer2/VBoxContainer" unique_id=1724389284]
+layout_mode = 2
+text = "Angry"
+
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/White Shirt" to="." method="_on_white_shirt_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/Black Shirt" to="." method="_on_black_shirt_pressed"]
 [connection signal="pressed" from="HBoxContainer/VBoxContainer/S shirt" to="." method="_on_s_shirt_pressed"]
@@ -82,3 +86,4 @@ text = "Normal"
 [connection signal="pressed" from="HBoxContainer/VBoxContainer2/Green Pants" to="." method="_on_green_pants_pressed"]
 [connection signal="pressed" from="HBoxContainer2/VBoxContainer/Smiling" to="." method="_on_smiling_pressed"]
 [connection signal="pressed" from="HBoxContainer2/VBoxContainer/Normal" to="." method="_on_normal_pressed"]
+[connection signal="pressed" from="HBoxContainer2/VBoxContainer/Angry" to="." method="_on_angry_pressed"]
